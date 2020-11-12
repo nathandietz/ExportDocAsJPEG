@@ -3,6 +3,8 @@ This script automates the laborious multi-step of exporting a CMYK 300dpi JPEG f
 
 ## Installation
 1. Move the `script_name.jsx` to one of the following directories
-  - macOS: `Applications/Adobe\ Illustrator\ 2020/Presets/[en_US/Scripts`
+  
+  - macOS: `Applications/Adobe\ Illustrator\ 2020/Presets/[en_US]/Scripts`
+  - asdf
   
 2. Restart Illustrator if the application was running when you installed the script
