@@ -7,18 +7,20 @@ Illustrator actions are very unforgiving and throw an errors unless the formatin
 Illustrator actions convert most unicode strings to hex strings. You can use onlinehextools.com/convert-hex-to-string (or something similar) to convert from hex<=>string.
 
 ```
-/version 3          		// Probably just an Illustrator Action version number         
-	/name [ 4       	// Number of characters in name of the Illustractor Set: set1	01 | 02 | 03 | 04
-		73657431	// Hex encoded name of Illustractor Set                         73 | 65 | 74 | 31 
-	]               	//                                                              s  | e  | t  | 1   
-
+/version 3
+	/* Name of Illustrator Set: set1 */
+	/name [ 4       	// 01 | 02 | 03 | 04	Number of characters in string	
+		73657431	// 73 | 65 | 74 | 31	Hexadecimal string                         
+	]               	// s  | e  | t  | 1	Unicode string
 	/isOpen        0    
-	/actionCount   1    
-	/action-1 {         
-		/name [ 4       	// Number of characters in name of the Illustractor action: act1    01 | 02 | 03 | 04
-			61637431	// Hex encoded name of Illustractor action                          61 | 63 | 74 | 31
-		]               	//                                                                  a  | c  | t  | 1
-
+	/actionCount   1  
+	
+	/action-1 {
+		/* Name of Illustrtor Action: act1 */
+		/name [ 4       	// 01 | 02 | 03 | 04	Number of characters in string
+			61637431	// 61 | 63 | 74 | 31	Hexadecimal string
+		]               	// a  | c  | t  | 1	Unicode string
+		
 		/keyIndex    1
 		/colorIndex  0
 		/isOpen      1
@@ -35,39 +37,37 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 			/isOn            1
 			/hasDialog       1
 			/showDialog      0
-			/parameterCount  7         	// Number for 'Export As' setting in the event
+			/parameterCount  7         	// Number of 'Export As' settings
 
-			/** defines: export settings
-
-				imagQual = Image Quality
-				compMeth = Compression Method
-				numScans = Number of Scan (Only applicable with Progressive Compression)
-				aliasing = Anti-Aliasing
-				imageRes = Image Resolution
-				colorMdl = Color Model
-				imageMap = Image Map
-				mapStyle = Image Map Style
-				iccProfl = ICC Profile
-			**/
-			/parameter-1 {			
+			/** Defines: export settings **/
+			/parameter-1 {
 				/key 1885434477		 
 				/showInPalette 0
 				/type (raw)/value < 100
+				     /* imagQual = Image Quality
+					compMeth = Compression Method
+					numScans = Number of Scan (Only applicable with Progressive Compression)
+					aliasing = Anti-Aliasing
+					imageRes = Image Resolution
+					colorMdl = Color Model
+					imageMap = Image Map
+					mapStyle = Image Map Style
+					iccProfl = ICC Profile */
 
-			//	imagQual   compMeth   numScans   aliasing   imageRes   colorMdl   imageMap   mapStyle
-				06000000   01000000   03000000   02000000   00002c01   02000000   02000000   02000000   // Each of 8 charater group repersents the individual export settings.
+				     /* imagQual   compMeth   numScans   aliasing   imageRes   colorMdl   imageMap   mapStyle */
+					06000000   01000000   03000000   02000000   00002c01   02000000   02000000   02000000   // Each of 8 charater group repersents the individual export settings.
 
-			//	i � m �	   a � g �    e � m �    a � p �
-				69006d00   61006700   65006d00   61007000   00000000   00000000   00000000   00000000   // Uknown: The first 32 charactes spellout: i�m�a�g�e�m�a�p�
-				00000000   00000000   00000000   00000000   00000000   00000000   00000000   00000000   // Uknown: Padding perhaps?
+				     /* i � m �	   a � g �    e � m �    a � p � */
+					69006d00   61006700   65006d00   61007000   00000000   00000000   00000000   00000000   // Uknown: The first 32 charactes spellout: i�m�a�g�e�m�a�p�
+					00000000   00000000   00000000   00000000   00000000   00000000   00000000   00000000   // Uknown: Padding perhaps?
 
-			//	iccProfl	
-				00000100																				
+				     /* iccProfl */
+					00000100																				
 				>
 				/size 100
 			}
 
-			/** defines: file path for file export **/
+			/** Defines: file path for file export **/
 			/parameter-2 {
 				/key 1851878757
 				/showInPalette 4294967295			
@@ -77,7 +77,7 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 				]
 			}
 
-			/** defines: image file format **/
+			/** Defines: image file format **/
 			/parameter-3 {
 				/key 1718775156
 				/showInPalette 4294967295
@@ -87,7 +87,7 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 				]
 			}
 
-			/** defines: file extention **/
+			/** Defines: file extention **/
 			/parameter-4 {
 				/key 1702392942
 				/showInPalette 4294967295
@@ -97,7 +97,7 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 				]
 			}
 
-			/** defines: 'Use Artboards' Checkbox **/
+			/** Defines: 'Use Artboards' Checkbox **/
 			/parameter-5 {
 				/key 1936548194
 				/showInPalette 4294967295
@@ -105,7 +105,7 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 				/value 1								              // 1 = checked | 0 = unchecked
 			}                                       // If '0' is set (unchecked) then both parameter-6 & parameter-7 are ignored
 
-			/** defines: 'All' or 'Range' Radio Button **/
+			/** Defines: 'All' or 'Range' Radio Button **/
 			/parameter-6 {
 				/key 1935764588
 				/showInPalette 4294967295
@@ -113,7 +113,7 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 				/value 0								              // 1 = All, 0 = Range
 			}                                       // If '1' is set then parameter-7 is ignored
 
-			/** defines: Range of Artbords to Export */
+			/** Defines: Range of Artbords to Export */
 			/parameter-7 {
 				/key 1936875886
 				/showInPalette 4294967295
