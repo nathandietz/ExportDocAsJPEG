@@ -1,16 +1,20 @@
-## This file will not run as it has comments. For a working version, see script.
+# A breakdown of the Export JPEG Illustrator Action
 
-Illustrator converts most unicode strings to hex. You can use onlinehextools.com/convert-hex-to-string (or something similar) to convert from hex<=>string
+**Warning: The code below will not run because it has comments.** 
+Illustrator actions are very unforgiving and throw an errors unless the formating is perfect. For a working version of this, look at the script file.
+
+### Unicode Strings & Hex Strings
+Illustrator actions convert most unicode strings to hex strings. You can use onlinehextools.com/convert-hex-to-string (or something similar) to convert from hex<=>string.
 
 ```
 /*#################################
 ########## .aia breakdown #########
 #################################*/
 
-/version 3              // Probably just an Illustrcator Action version number.         
-	/name [ 4             // Number of characters in name of the Illustractor Set: set1   	  01 | 02 | 03 | 04
-		73657431            // Hex encoded name of Illustractor Set                       		  73 | 65 | 74 | 31 
-	]                     //                                                             		  s  | e  | t  | 1   
+/version 3              	// Probably just an Illustrcator Action version number.         
+	/name [ 4              	// Number of characters in name of the Illustractor Set: set1   	  01 | 02 | 03 | 04
+		73657431	// Hex encoded name of Illustractor Set                       		  73 | 65 | 74 | 31 
+	]                     	//                                                             		  s  | e  | t  | 1   
 
 	/isOpen        0    
 	/actionCount   1    
