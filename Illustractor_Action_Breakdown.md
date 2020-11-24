@@ -5,7 +5,7 @@ Illustrator actions are very unforgiving and will throw an error unless the form
 
 
 ##### Unicode Strings & Hex Strings
-Illustrator actions convert most unicode strings to hex strings. You can use onlinehextools.com/convert-hex-to-string (or something similar) to convert from hex<=>string.
+Illustrator actions convert most unicode strings to hex strings. You can use [onlinehextools.com/convert-hex-to-string](https://onlinehextools.com/convert-hex-to-string) (or something similar) to convert from `string <=> hex`.
 
 ```
 /version 3
