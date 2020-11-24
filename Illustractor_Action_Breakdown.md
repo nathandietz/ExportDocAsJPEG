@@ -1,8 +1,18 @@
 # A breakdown of the Export JPEG Illustrator Action 
 
-#### Warning: The code below will not run because of the comments
+
+-------------
+
+##### Development Environment
+Adobe Illustrator	: 24.3  
+macOS High Sierra	: 10.13.6
+
+-------------
+
+##### Warning: The code below will not run because of the comments
 Illustrator actions are very unforgiving and will throw an error unless the formating is perfect. For a working version, reference the .jsx script.
 
+-------------
 
 ##### Unicode Strings & Hex Strings
 Illustrator actions convert most unicode strings to hex strings. You can use [onlinehextools.com/convert-hex-to-string](https://onlinehextools.com/convert-hex-to-string) (or something similar) to convert from `string <=> hex`.
