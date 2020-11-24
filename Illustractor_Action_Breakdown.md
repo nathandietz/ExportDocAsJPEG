@@ -1,23 +1,23 @@
 # A breakdown of the Export JPEG Illustrator Action 
 
-**Warning: The code below will not run because it has comments.** 
+##**Warning: The code below will not run because it has comments.** 
 Illustrator actions are very unforgiving and throw an errors unless the formating is perfect. For a working version of this, look at the script file.
 
-### Unicode Strings & Hex Strings
+##### Unicode Strings & Hex Strings
 Illustrator actions convert most unicode strings to hex strings. You can use onlinehextools.com/convert-hex-to-string (or something similar) to convert from hex<=>string.
 
 ```
 /version 3          		// Probably just an Illustrator Action version number         
-	/name [ 4       	// Number of characters in name of the Illustractor Set: set1           	01 | 02 | 03 | 04
-		73657431	// Hex encoded name of Illustractor Set                                 	73 | 65 | 74 | 31 
-	]               	//                                                                      	s  | e  | t  | 1   
+	/name [ 4       	// Number of characters in name of the Illustractor Set: set1	01 | 02 | 03 | 04
+		73657431	// Hex encoded name of Illustractor Set                         73 | 65 | 74 | 31 
+	]               	//                                                              s  | e  | t  | 1   
 
 	/isOpen        0    
 	/actionCount   1    
 	/action-1 {         
-		/name [ 4       	// Number of characters in name of the Illustractor action: act1	01 | 02 | 03 | 04
-			61637431	// Hex encoded name of Illustractor action                      	61 | 63 | 74 | 31
-		]               	//                                                                  	a  | c  | t  | 1
+		/name [ 4       	// Number of characters in name of the Illustractor action: act1    01 | 02 | 03 | 04
+			61637431	// Hex encoded name of Illustractor action                          61 | 63 | 74 | 31
+		]               	//                                                                  a  | c  | t  | 1
 
 		/keyIndex    1
 		/colorIndex  0
@@ -27,15 +27,15 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 		/event-1 {
 			/useRulersIn1stQuadrant 0
 			/internalName (adobe_exportDocument)
-			/localizedName [ 9          // Number of characters in name of the Illustractor command: Export As   	01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09
-				4578706f7274204173	//                                                                          45 | 78 | 70 | 6f | 72 | 74 | 20 | 41 | 73         
-			]                           //                                                                          E  | x  | p  | o  | r  | t  |    | A  | s
+			/localizedName [ 9        	// 01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09
+				4578706f7274204173	// 45 | 78 | 70 | 6f | 72 | 74 | 20 | 41 | 73         
+			]                         	// E  | x  | p  | o  | r  | t  |    | A  | s
 
 			/isOpen          0
 			/isOn            1
 			/hasDialog       1
 			/showDialog      0
-			/parameterCount  7          // Number for 'Export As' setting in the event
+			/parameterCount  7         	// Number for 'Export As' setting in the event
 
 			/** defines: export settings
 
@@ -55,14 +55,14 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 				/type (raw)/value < 100
 
 			//	imagQual   compMeth   numScans   aliasing   imageRes   colorMdl   imageMap   mapStyle
-					06000000   01000000   03000000   02000000   00002c01   02000000   02000000   02000000   // Each of 8 charater group repersents the individual export settings.
+				06000000   01000000   03000000   02000000   00002c01   02000000   02000000   02000000   // Each of 8 charater group repersents the individual export settings.
 
 			//	i � m �	   a � g �    e � m �    a � p �
-					69006d00   61006700   65006d00   61007000   00000000   00000000   00000000   00000000   // Uknown: The first 32 charactes spellout: i�m�a�g�e�m�a�p�
-					00000000   00000000   00000000   00000000   00000000   00000000   00000000   00000000   // Uknown: Padding perhaps?
+				69006d00   61006700   65006d00   61007000   00000000   00000000   00000000   00000000   // Uknown: The first 32 charactes spellout: i�m�a�g�e�m�a�p�
+				00000000   00000000   00000000   00000000   00000000   00000000   00000000   00000000   // Uknown: Padding perhaps?
 
 			//	iccProfl	
-					00000100																				
+				00000100																				
 				>
 				/size 100
 			}
@@ -82,8 +82,8 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 				/key 1718775156
 				/showInPalette 4294967295
 				/type (ustring)
-				/value [ 16 							            // Number of characters in file format string
-					4a5045472066696c6520666f726d6174    // JPEG file format
+				/value [ 16 					// Number of characters in file format string
+					4a5045472066696c6520666f726d6174	// JPEG file format
 				]
 			}
 
@@ -92,8 +92,8 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 				/key 1702392942
 				/showInPalette 4294967295
 				/type (ustring)
-				/value [ 12 							            // Number of characters in file extention string
-					6a70672c6a70652c6a706567            // jpg,jpe,jpeg
+				/value [ 12 				// Number of characters in file extention string
+					6a70672c6a70652c6a706567	// jpg,jpe,jpeg
 				]
 			}
 
