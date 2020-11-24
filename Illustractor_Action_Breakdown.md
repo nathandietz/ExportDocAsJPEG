@@ -2,6 +2,7 @@
 
 Illustrator converts most unicode strings to hex. You can use onlinehextools.com/convert-hex-to-string (or something similar) to convert from hex<=>string
 
+```
 /*#################################
 ########## .aia breakdown #########
 #################################*/
@@ -122,3 +123,4 @@ Illustrator converts most unicode strings to hex. You can use onlinehextools.com
 			}
 		}
 	}
+```
