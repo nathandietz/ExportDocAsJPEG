@@ -7,10 +7,10 @@ Illustrator actions are very unforgiving and throw an errors unless the formatin
 Illustrator actions convert most unicode strings to hex strings. You can use onlinehextools.com/convert-hex-to-string (or something similar) to convert from hex<=>string.
 
 ```
-/version 3          // Probably just an Illustrator Action version number         
-	/name [ 4       // Number of characters in name of the Illustractor Set: set1           01 | 02 | 03 | 04
-		73657431    // Hex encoded name of Illustractor Set                                 73 | 65 | 74 | 31 
-	]               //                                                                      s  | e  | t  | 1   
+/version 3          		// Probably just an Illustrator Action version number         
+	/name [ 4       	// Number of characters in name of the Illustractor Set: set1           01 | 02 | 03 | 04
+		73657431    	// Hex encoded name of Illustractor Set                                 73 | 65 | 74 | 31 
+	]               	//                                                                      s  | e  | t  | 1   
 
 	/isOpen        0    
 	/actionCount   1    
