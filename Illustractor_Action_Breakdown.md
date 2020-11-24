@@ -7,40 +7,35 @@ Illustrator actions are very unforgiving and throw an errors unless the formatin
 Illustrator actions convert most unicode strings to hex strings. You can use onlinehextools.com/convert-hex-to-string (or something similar) to convert from hex<=>string.
 
 ```
-/*#################################
-########## .aia breakdown #########
-#################################*/
-
-/version 3              	// Probably just an Illustrcator Action version number.         
-	/name [ 4              	// Number of characters in name of the Illustractor Set: set1   	  01 | 02 | 03 | 04
-		73657431	// Hex encoded name of Illustractor Set                       		  73 | 65 | 74 | 31 
-	]                     	//                                                             		  s  | e  | t  | 1   
+/version 3          // Probably just an Illustrator Action version number         
+	/name [ 4       // Number of characters in name of the Illustractor Set: set1           01 | 02 | 03 | 04
+		73657431    // Hex encoded name of Illustractor Set                                 73 | 65 | 74 | 31 
+	]               //                                                                      s  | e  | t  | 1   
 
 	/isOpen        0    
 	/actionCount   1    
 	/action-1 {         
+		/name [ 4       // Number of characters in name of the Illustractor action: act1    01 | 02 | 03 | 04
+			61637431    // Hex encoded name of Illustractor action                        	61 | 63 | 74 | 31
+		]               //                                                                  a  | c  | t  | 1
 
-		/name [ 4 		      // Number of characters in name of the Illustractor action: act1	  01 | 02 | 03 | 04
-			61637431	        // Hex encoded name of Illustractor action                        	61 | 63 | 74 | 31
-		]				            //																	                                a  | c  | t  | 1
-
-		/keyIndex    1	
-		/colorIndex  0	
-		/isOpen      1	
-		/eventCount  1	
+		/keyIndex    1
+		/colorIndex  0
+		/isOpen      1
+		/eventCount  1
 
 		/event-1 {
 			/useRulersIn1stQuadrant 0
-			/internalName (adobe_exportDocument)	
-			/localizedName [ 9 		    // Number of characters in name of the Illustractor command: Export As   	01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09
-				4578706f7274204173	    //																			                                  45 | 78 | 70 | 6f | 72 | 74 | 20 | 41 | 73         
-			]						              //																			                                  E  | x  | p  | o  | r  | t  |    | A  | s
+			/internalName (adobe_exportDocument)
+			/localizedName [ 9          // Number of characters in name of the Illustractor command: Export As   	01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09
+				4578706f7274204173      //                                                                          45 | 78 | 70 | 6f | 72 | 74 | 20 | 41 | 73         
+			]                           //                                                                          E  | x  | p  | o  | r  | t  |    | A  | s
 
 			/isOpen          0
 			/isOn            1
 			/hasDialog       1
 			/showDialog      0
-			/parameterCount  7		    // Number for 'Export As' setting in the event
+			/parameterCount  7          // Number for 'Export As' setting in the event
 
 			/** defines: export settings
 
