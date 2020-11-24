@@ -1,4 +1,4 @@
-# A breakdown of the Export JPEG Illustrator Action
+# A breakdown of the Export JPEG Illustrator Action 
 
 **Warning: The code below will not run because it has comments.** 
 Illustrator actions are very unforgiving and throw an errors unless the formating is perfect. For a working version of this, look at the script file.
