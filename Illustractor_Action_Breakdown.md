@@ -1,6 +1,6 @@
 # A breakdown of the Export JPEG Illustrator Action 
 
-##**Warning: The code below will not run because it has comments.** 
+### Warning: The code below will not run because it has comments
 Illustrator actions are very unforgiving and throw an errors unless the formating is perfect. For a working version of this, look at the script file.
 
 ##### Unicode Strings & Hex Strings
@@ -72,8 +72,8 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 				/key 1851878757
 				/showInPalette 4294967295			
 				/type (ustring)
-				/value [ 42 																				                                      // Number of characters in file export path
-					2f506174682f746f2f796f75722f6578706f72742f666f6c6465722f556e7469746c65642d312e6a7067    // /Path/to/your/export/folder/Untitled-1.jpg
+				/value [ 19 					// Number of characters in file export path
+					2f706174682f746f2f6578706f72742e6a7067	// /path/to/export.jpg
 				]
 			}
 
@@ -92,8 +92,8 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 				/key 1702392942
 				/showInPalette 4294967295
 				/type (ustring)
-				/value [ 12 				// Number of characters in file extention string
-					6a70672c6a70652c6a706567	// jpg,jpe,jpeg
+				/value [ 12 					// Number of characters in file extention string
+					6a70672c6a70652c6a706567		// jpg,jpe,jpeg
 				]
 			}
 
@@ -102,23 +102,23 @@ Illustrator actions convert most unicode strings to hex strings. You can use onl
 				/key 1936548194
 				/showInPalette 4294967295
 				/type (boolean)
-				/value 1								              // 1 = checked | 0 = unchecked
-			}                                       // If '0' is set (unchecked) then both parameter-6 & parameter-7 are ignored
+				/value 1		// 1 = checked | 0 = unchecked
+			}				// If '0' is set (unchecked) then both parameter-6 & parameter-7 are ignored
 
 			/** Defines: 'All' or 'Range' Radio Button **/
 			/parameter-6 {
 				/key 1935764588
 				/showInPalette 4294967295
 				/type (boolean)
-				/value 0								              // 1 = All, 0 = Range
-			}                                       // If '1' is set then parameter-7 is ignored
+				/value 0		// 1 = All, 0 = Range
+			}				// If '1' is set then parameter-7 is ignored
 
 			/** Defines: Range of Artbords to Export */
 			/parameter-7 {
 				/key 1936875886
 				/showInPalette 4294967295
 				/type (ustring)
-				/value [ 0]								            // [ 0] = All, [ 1 31] = Artboard #1 , [ 1 32] = Artboard #2, et cetera
+				/value [ 0]		// [ 0] = All, [ 1 31] = Artboard #1 , [ 1 32] = Artboard #2, et cetera
 			}
 		}
 	}
