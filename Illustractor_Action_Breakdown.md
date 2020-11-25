@@ -11,29 +11,9 @@
 | Anti-aliasing		| `aliasing` | `02000000` | `01000000` = None<br>`02000000` = Art Optimzied  (Supersampling)<br>`03000000` = Type Optimzied (Hinted)
 | Image Resolution	| `imageRes` | `00002c01` | `00004800` = Screen (72 dpi)<br>`00009600` = Medium (150 dpi)<br>`00002c01` = High (300 dpi)<br>`00005802` = Max (600 dpi)
 | Color Model		| `colorMdl` | `02000000` | `01000000` = RGB<br>`02000000` = CMYK<br>`03000000` = Grayscale
-
-### Color Model
-```
-colorMdl = "02000000"; /*  Range: 1-3
-                          01000000 = RGB
-                          02000000 = CMYK
-                          03000000 = Grayscale */                                
-```			  
-// Image Map
-imageMap = "02000000"; /*  Range: 2-3
-                          02000000 = Disabled
-                          03000000 = Enabled 
-                      */ 
-// Image Map Style
-mapStyle = "02000000"; /*  Range: 1-2
-                          01000000 = Client (.html)
-                          02000000 = Server (.map)
-                      */                                             
-// ICC Profile
-iccProfl = "00000100"; /*  Range: 0-1
-                          00000000 = Do not embed ICC Profile
-                          00000100 = Embed ICC Profile
-                      */
+| Image Map		| `imageMap` | `02000000` | `02000000` = Disabled<br>`03000000` = Enabled
+| Image Map Style	| `mapStyle` | `02000000` | `01000000` = Client (.html)<br>`02000000` = Server (.map)
+| ICC Profile		| `iccProfl` | `00000100` | `00000000` = Do not embed ICC Profile<br>`00000100` = Embed ICC Profile
 
 ```
 ##### Warning: The code below will not run because of the comments
