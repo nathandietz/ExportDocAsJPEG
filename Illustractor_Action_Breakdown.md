@@ -16,7 +16,11 @@ Adjusted these in the `ExportDocAsJPEG.jsx` script to best fit your need. These 
 | Image Map Style	| `mapStyle` | `02000000` | `01000000` = Client (.html)<br>`02000000` = Server (.map)
 | ICC Profile		| `iccProfl` | `00000100` | `00000000` = Do not embed ICC Profile<br>`00000100` = Embed ICC Profile
 
-```
+
+## Export Location
+
+## Script Explination
+
 ##### Warning: The code below will not run because of the comments
 Illustrator actions are very unforgiving and will throw an error unless the formating is perfect. For a working version, reference the .jsx script.
 
