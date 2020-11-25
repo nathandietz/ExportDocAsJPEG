@@ -2,7 +2,7 @@
 This script automates the laborious multi-step of exporting a CMYK 300dpi JPEG from Illustrator.
 
 ## Installation
-1. Move the `script_name.jsx` to one of the following directories
+1. Move the `Export 300dpi CMYK JPG` to one of the following directories
   
   - macOS: `Applications/Adobe\ Illustrator\ 2020/Presets/[en_US]/Scripts`
   - asdf
