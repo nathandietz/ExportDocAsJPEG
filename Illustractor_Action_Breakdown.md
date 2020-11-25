@@ -1,14 +1,18 @@
 # A breakdown of the Export JPEG Illustrator Action 
 
+
+### Image Quality
 ```
-// Image Quality
 imagQual = "06000000"; /*  Range: 0-10
                           01000000 = Low
                           03000000 = Medium
                           06000000 = High
                           08000000 = Maximum
                       */
+```
+
 // Compression Method
+```
 compMeth = "01000000"; /*  Range: 1-3
                           01000000 = Baseline (Standard)
                           02000000 = Baseline Optimzied
