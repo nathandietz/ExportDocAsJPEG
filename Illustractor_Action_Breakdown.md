@@ -1,7 +1,7 @@
-# A breakdown of the Export JPEG Illustrator Action 
+# Customizing and Tweaking 
 
 
-## JPEG Export Settings
+### JPEG Export Settings
 Adjusted these in the `ExportDocAsJPEG.jsx` script to best fit your need. These settings are set to bet work for my personal workflow.
 
 | Setting Name | Script Variable | Script Value | Range of Options |
@@ -17,9 +17,10 @@ Adjusted these in the `ExportDocAsJPEG.jsx` script to best fit your need. These 
 | ICC Profile		| `iccProfl` | `00000100` | `00000000` = Do not embed ICC Profile<br>`00000100` = Embed ICC Profile
 
 
-## Export Location
+### Export Location
 
-## Script Explination
+
+### Script Explination
 
 ##### Warning: The code below will not run because of the comments
 Illustrator actions are very unforgiving and will throw an error unless the formating is perfect. For a working version, reference the .jsx script.
