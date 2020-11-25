@@ -3,21 +3,14 @@
 
 ## JPEG Export Settings
 
-| Name | variable | Value | Range Options |
+| Setting Name | variable | Default Value | Range Options |
 | --- | --- | --- | --- |
 | Image Quality		| `imagQual` | `06000000` | `01000000` = Low<br>`03000000` = Medium<br>`06000000` = High<br>`08000000` = Maximum
 | Compression Method	| `compMeth` | `01000000` | `01000000` = Baseline (Standard)<br> `02000000` = Baseline Optimzied<br>`03000000` = Progressive
-| Number of Scans 	| `numScans` | `03000000` | `03000000` = *This is only applicable when using Progressive compression*<br>3 Scans<br>`04000000` = 4 Scans<br>`05000000` = 5 Scans
+| Number of Scans 	| `numScans` | `03000000` | `03000000` = 3 Scans<br>`04000000` = 4 Scans<br>`05000000` = 5 Scans<br>*Only used when Progressive compression is enabled*
 | Anti-aliasing		| `aliasing` | `02000000` | `01000000` = None<br>`02000000` = Art Optimzied  (Supersampling)<br>`03000000` = Type Optimzied (Hinted)
 | Image Resolution	| `imageRes` | `00002c01` | `00004800` = Screen (72 dpi)<br>`00009600` = Medium (150 dpi)<br>`00002c01` = High (300 dpi)<br>`00005802` = Max (600 dpi)
-
-### Image Resolution
-```
-imageRes = "00002c01" /*  00004800 = Screen (72 dpi)
-                          00009600 = Medium (150 dpi)
-                          00002c01 = High   (300 dpi)
-                          00005802 = Max    (600 dpi) */
-```
+| Color Model		| `colorMdl` | `02000000` | `01000000` = RGB<br>`02000000` = CMYK<br>`03000000` = Grayscale
 
 ### Color Model
 ```
