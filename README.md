@@ -1,14 +1,13 @@
-# Illustrator JPEG Exporter
-My Illustrator design workflow frequently requires me to export 300dpi CMYK JPEG images. The `ExportDocAsJPEG.jsx` reduces this laborious multi-step (7+ clicks) process down to two clicks or a single keyboard shortcut (macOS only).
+# ExportDocAsJPEG
+My design workflow for Illustrator frequently requires me to export 300dpi CMYK JPEG images. The `ExportDocAsJPEG.jsx` reduces this laborious multi-step (7+ clicks) process down to two clicks or a single keyboard shortcut (macOS only).
 
----------
 #### Disclaimer
-The `ExportDocAsJPEG.jsx` script has only been tested on **macOS High Sierra (10.13.6)** and **Adobe Illustrator CC 2020 (24.3)**. While it should work on other versions of macOS and Adobe Illustrator, I cannot make any guarantees. You may need to adjust to fit your setup. It theoretically should also work on Windows, as I don't believe there is any OS dependent code. Proceed at your own risk. 
+The `ExportDocAsJPEG.jsx` script has only been tested on **macOS High Sierra (10.13.6)** and **Adobe Illustrator CC 2020 (24.3)**. While it should work on other versions of macOS and Adobe Illustrator, I cannot make any guarantees. You may need to adjust to fit your setup. It theoretically should also work on Windows, as I don't believe there is any OS dependent code. However, proceed at your own risk.
 
 ---------
 
 ## 1. Installation
-1. Download [ExportDocAsJPEG.jsx](ExportDocAsJPEG.jsx)  
+1. Download [ExportDocAsJPEG.jsx](ExportDocAsJPEG.jsx) 
 2. Move into the [Adobe Illustrator Scripts folder](https://helpx.adobe.com/illustrator/using/automation-scripts.html)  
     - macOS:    `Applications/Adobe\ Illustrator\ 2020/Presets/[en_US]/Scripts`
     - windows:  `C:\Program Files\Adobe\Adobe Illustrator 2020\Presets\en_US\Scripts`
@@ -17,7 +16,11 @@ The `ExportDocAsJPEG.jsx` script has only been tested on **macOS High Sierra (10
 4. In Illustrator, navigate to `File => Scripts` submenu and click `ExportDocAsJPEG.jsx` to run the script.
 
 
-## 2. Assigning a Keyboard Shortcut (**macOS ONLY**)
+## 2. Customizing & Tweaking
+If you want to better understand how the Illustrator action is built, you can reference [Illustractor_Action_Breakdown.md](Illustractor_Action_Breakdown.md). It breaks down the different sections of the action and how to modify them.
+
+
+## 3. Assigning a Keyboard Shortcut (**macOS ONLY**)
 Illustrator currently doesn't allow you to assign a keyboard shortcut to any script in the `File => Scripts` submenu. However, you can get around this limitation by creating an Automator service for Illustrator that runs `ExportDocAsJPEG.jsx` and assign that a keyboard shortcut through `System Peferences => Keyboard => Shortcuts => Services`
 
 #### Easy Way
@@ -37,6 +40,3 @@ Illustrator currently doesn't allow you to assign a keyboard shortcut to any scr
  
 ![Automator Build Settings](/ExportDocAsJPEG.workflow/Contents/QuickLook/Preview.png)
 
-
-## Understanding the Illustrator Action
-If you want to better understand how the Illustrator action is built, you can reference [Illustractor_Action_Breakdown.md](Illustractor_Action_Breakdown.md). It breaks down the different sections of the action and how to modify them.
