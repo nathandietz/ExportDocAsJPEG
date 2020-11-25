@@ -3,7 +3,7 @@
 
 ### Image Quality
 ```
-imagQual = "06000000"; /*  Range: 0-10
+imagQual = "06000000"; /* Range: 0-10
                           01000000 = Low
                           03000000 = Medium
                           06000000 = High
@@ -11,14 +11,17 @@ imagQual = "06000000"; /*  Range: 0-10
                       */
 ```
 
-// Compression Method
+### Compression Method
 ```
-compMeth = "01000000"; /*  Range: 1-3
+compMeth = "01000000"; /* Range: 1-3
                           01000000 = Baseline (Standard)
                           02000000 = Baseline Optimzied
                           03000000 = Progressive 
-                      */
-// Number of Scans
+                      */ 
+```
+
+### Number of Scans 
+```
 numScans = "03000000"; /*  Range: 3-5
                           03000000 = 3 Scans
                           04000000 = 4 Scans
@@ -26,6 +29,7 @@ numScans = "03000000"; /*  Range: 3-5
 
                           This is only applicable when using Progressive compression "03000000"
                       */
+```
 // Anti-aliasing
 aliasing = "02000000" /*  Range: 1-3
                           01000000 = None
