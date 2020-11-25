@@ -2,7 +2,7 @@
 
 
 ### JPEG Export Settings
-These are set to best work for my personal workflow. Adjust these as needed in the `ExportDocAsJPEG.jsx` script to best fit your need. 
+These are set to best work for my personal workflow. Adjust as needed in to best fit your need. 
 
 | Setting Name | Script Variable | Script Value | Range of Options |
 | --- | --- | --- | --- |
@@ -17,8 +17,8 @@ These are set to best work for my personal workflow. Adjust these as needed in t
 | ICC Profile		| `iccProfl` | `00000100` | `00000000` = Do not embed ICC Profile<br>`00000100` = Embed ICC Profile
 
 
-### Export Location
-
+### Default Export Location
+The default script save location is based on my workflow and will attempt to write JPEG file to `path_of_active_document => Presentations => jpegs`. To change this behavior, uncomment the line `destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );` which will prompt for a save location.
 
 ### Script Explination
 
