@@ -5,44 +5,10 @@
 
 | Name | variable | Value | Range Options |
 | --- | --- | --- | --- |
-| Image Quality | `imagQual` | `06000000` | `01000000` = Low<br>`03000000` = Medium<br>`06000000` = High<br>`08000000` = Maximum
-| Compression Method | `compMeth` | `01000000` | `01000000` = Baseline (Standard)<br> `02000000` = Baseline Optimzied<br>`03000000` = Progressive
-
-| git diff | Show file differences that haven't been staged |
-
-
-### Image Quality
-```
-imagQual = "06000000"; /* Range: 0-10
-                          01000000 = Low
-                          03000000 = Medium
-                          06000000 = High
-                          08000000 = Maximum */
-```
-
-### Compression Method
-```
-compMeth = "01000000"; /* Range: 1-3
-                          01000000 = Baseline (Standard)
-                          02000000 = Baseline Optimzied
-                          03000000 = Progressive */ 
-```
-
-### Number of Scans 
-```
-numScans = "03000000"; /* Range: 3-5
-                          03000000 = 3 Scans
-                          04000000 = 4 Scans
-                          05000000 = 5 Scans
-                          This is only applicable when using Progressive compression "03000000" */
-```
-### Anti-aliasing
-```
-aliasing = "02000000" /*  Range: 1-3
-                          01000000 = None
-                          02000000 = Art Optimzied  (Supersampling)
-                          03000000 = Type Optimzied (Hinted) */
-```
+| Image Quality		| `imagQual` | `06000000` | `01000000` = Low<br>`03000000` = Medium<br>`06000000` = High<br>`08000000` = Maximum
+| Compression Method	| `compMeth` | `01000000` | `01000000` = Baseline (Standard)<br> `02000000` = Baseline Optimzied<br>`03000000` = Progressive
+| Number of Scans 	| `numScans` | `03000000` | `03000000` = 3 Scans<br>`04000000` = 4 Scans<br>`05000000` = 5 Scans<br>*This is only applicable when using Progressive compression `03000000`*
+| Anti-aliasing		| `aliasing` | `02000000` | `01000000` = None<br>`02000000` = Art Optimzied  (Supersampling)<br>`03000000` = Type Optimzied (Hinted)
 
 ### Image Resolution
 ```
