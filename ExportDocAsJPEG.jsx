@@ -106,8 +106,8 @@ function main() {
         var destFolder = null;
         
         
-        //destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' ); // Uncomment for custom location for file save
-        destFolder = getJPEGFolder();
+        destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' ); // Dialog popup for Export location 
+        //destFolder = getJPEGFolder();    // Export location based on saved file location
        
         // Generates full path name
         targetFile = destFolder.fsName + "/" + baseName(app.activeDocument.name) + ".jpg";
