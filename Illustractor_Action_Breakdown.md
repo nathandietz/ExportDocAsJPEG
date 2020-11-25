@@ -1,6 +1,6 @@
 # A breakdown of the Export JPEG Illustrator Action 
 
-
+```
 // Image Quality
 imagQual = "06000000"; /*  Range: 0-10
                           01000000 = Low
@@ -56,7 +56,7 @@ iccProfl = "00000100"; /*  Range: 0-1
                           00000100 = Embed ICC Profile
                       */
 
-
+```
 ##### Warning: The code below will not run because of the comments
 Illustrator actions are very unforgiving and will throw an error unless the formating is perfect. For a working version, reference the .jsx script.
 
