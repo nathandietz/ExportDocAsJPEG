@@ -1,6 +1,16 @@
 # A breakdown of the Export JPEG Illustrator Action 
 
 
+## JPEG Export Settings
+
+| Name | variable | Value | Range Options |
+| --- | --- | --- | --- |
+| Image Quality | `imagQual` | `06000000` | `01000000` = Low<br>`03000000` = Medium<br>`06000000` = High<br>`08000000` = Maximum
+| Compression Method | `compMeth` | `01000000` | `01000000` = Baseline (Standard)<br> `02000000` = Baseline Optimzied<br>`03000000` = Progressive
+
+| git diff | Show file differences that haven't been staged |
+
+
 ### Image Quality
 ```
 imagQual = "06000000"; /* Range: 0-10
