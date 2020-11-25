@@ -15,5 +15,6 @@ Illustrator currently doesn't allow you to assign a keyboard shortcut to any scr
 
 
 
+
 ## Understanding the Illustrator Action
 If you want to better understand how the Illustrator action is built, you can reference [Illustractor_Action_Breakdown.md](Illustractor_Action_Breakdown.md). It breaks down the different sections of the action and how to modify them.
