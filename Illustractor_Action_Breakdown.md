@@ -3,7 +3,7 @@
 
 ## JPEG Export Settings
 
-| Setting Name | variable | Default Value | Range Options |
+| Setting Name | Script Variable | Default Value | Range of Options |
 | --- | --- | --- | --- |
 | Image Quality		| `imagQual` | `06000000` | `01000000` = Low<br>`03000000` = Medium<br>`06000000` = High<br>`08000000` = Maximum
 | Compression Method	| `compMeth` | `01000000` | `01000000` = Baseline (Standard)<br> `02000000` = Baseline Optimzied<br>`03000000` = Progressive
