@@ -2,10 +2,9 @@
 This script automates the laborious multi-step of exporting a CMYK 300dpi JPEG from Illustrator.
 
 ## Installation
-1. Download [ExportDocAsJPEG.jsx](ExportDocAsJPEG.jsx)
-2. Move into the [Adobe Illustrator Scripts folder](https://helpx.adobe.com/illustrator/using/automation-scripts.html)
-  
-  - For macOS: `Applications/Adobe\ Illustrator\ 2020/Presets/[en_US]/Scripts`
+1. Download [ExportDocAsJPEG.jsx](ExportDocAsJPEG.jsx)  
+2. Move into the [Adobe Illustrator Scripts folder](https://helpx.adobe.com/illustrator/using/automation-scripts.html)  
+    - For macOS: `Applications/Adobe\ Illustrator\ 2020/Presets/[en_US]/Scripts`
   
 3. Restart Illustrator if the application was running when you installed the script
 4. In Illustrator, navigate to File > Scripts submenu and click to run.
