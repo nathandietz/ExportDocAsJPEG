@@ -2,7 +2,7 @@
 
 
 ### JPEG Export Settings
-Adjusted these in the `ExportDocAsJPEG.jsx` script to best fit your need. These settings are set to bet work for my personal workflow.
+These are set to best work for my personal workflow. Adjust these as needed in the `ExportDocAsJPEG.jsx` script to best fit your need. 
 
 | Setting Name | Script Variable | Script Value | Range of Options |
 | --- | --- | --- | --- |
