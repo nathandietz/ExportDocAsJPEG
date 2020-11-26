@@ -1,4 +1,4 @@
-# Customizing and Tweaking 
+# Script Settings 
 
 
 ### JPEG Export Settings
