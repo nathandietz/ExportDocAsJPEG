@@ -4,7 +4,7 @@ This details the options for JPEG Export Settings, changing the default export l
 ## Table of Contents  
 1. [Export Settings](#export-settings)
 2. [Export Location](#default-export-location)
-3. [Script Breakdown(#script-breakdown)
+3. [Script Breakdown](#script-breakdown)
 
 ### Export Settings
 These are set to best work for my personal workflow. Adjust as needed in to best fit your need. 
