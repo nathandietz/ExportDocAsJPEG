@@ -1,13 +1,14 @@
 # Script Settings 
-This details the options for JPEG Export Settings, changing the default export location, breaks down the `.aia` Illustrator action.
+This details the options for Export Settings, changing the default export location, and comments the `.aia` Illustrator action. The current values are set to best work for my personal workflow. Adjust as needed. 
 
 ## Table of Contents  
-1. [Export Settings](#export-settings)
-2. [Export Location](#default-export-location)
-3. [Script Breakdown](#script-breakdown)
+**[JPEG Options](#export-settings)**  
+The setting name, variable, and values for the Illustrator export window
+
+[Export Location](#default-export-location)
+[Script Breakdown](#script-breakdown)
 
 ### Export Settings
-These are set to best work for my personal workflow. Adjust as needed in to best fit your need. 
 
 | Setting Name | Script Variable | Script Value | Options |
 | --- | --- | --- | --- |
