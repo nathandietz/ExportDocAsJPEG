@@ -2,8 +2,8 @@
 *The current values are set to best work for my personal workflow. Adjust as needed.*
 
 ## Table of Contents  
-[JPEG Options](#export-settings)  
-A breakdown for all the settings in the Illustrator **JPEG Options** window
+[JPEG Options](#jpeg-options)  
+A breakdown for all the settings in the Illustrator **[JPEG Options](/screenshots/window_JPEG_Options.png)** window
 
 [Export Location](#default-export-location)  
 Description  
@@ -27,10 +27,12 @@ Description
 | Imagemap Style	| `mapStyle` | `02000000` | `01000000` = Client (.html)<br>`02000000` = Server (.map)
 | Embed ICC Profile	| `iccProfl` | `00000100` | `00000000` = Do not embed ICC Profile<br>`00000100` = Embed ICC Profile
 
+-------------
 
 ### Default Export Location
 The default script save location is based on my workflow and will attempt to write JPEG file to `path_of_active_document => Presentations => jpegs`. To change this behavior, uncomment the line `destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );` which will prompt for a save location.
 
+-------------
 
 ### Script Breakdown
 
