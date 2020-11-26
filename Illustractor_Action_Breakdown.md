@@ -4,7 +4,7 @@
 ### JPEG Export Settings
 These are set to best work for my personal workflow. Adjust as needed in to best fit your need. 
 
-| Setting Name | Script Variable | Script Value | Range of Options |
+| Setting Name | Script Variable | Script Value | Options |
 | --- | --- | --- | --- |
 | Image Quality		| `imagQual` | `06000000` | `01000000` = Low<br>`03000000` = Medium<br>`06000000` = High<br>`08000000` = Maximum
 | Compression Method	| `compMeth` | `01000000` | `01000000` = Baseline (Standard)<br> `02000000` = Baseline Optimzied<br>`03000000` = Progressive
