@@ -2,13 +2,13 @@
 This details the options for Export Settings, changing the default export location, and comments the `.aia` Illustrator action. The current values are set to best work for my personal workflow. Adjust as needed. 
 
 ## Table of Contents  
-**1. [JPEG Options](#export-settings)**  
+1. [JPEG Options](#export-settings)  
 A breakdown for all the settings in the Illustrator **JPEG Options** window
 
-**2. [Export Location](#default-export-location)**
+2. [Export Location](#default-export-location)  
 Description  
 
-**3. [Script Breakdown](#script-breakdown)**
+3. [Script Breakdown](#script-breakdown)  
 Description  
 
 
