@@ -1,7 +1,12 @@
 # Script Settings 
 This details the options for JPEG Export Settings, changing the default export location, breaks down the `.aia` Illustrator action.
 
-### JPEG Export Settings
+## Table of Contents  
+1. [Export Settings](#export-settings)
+2. [Export Location](#default-export-location)
+3. [Script Breakdown(#script-breakdown)
+
+### Export Settings
 These are set to best work for my personal workflow. Adjust as needed in to best fit your need. 
 
 | Setting Name | Script Variable | Script Value | Options |
@@ -21,7 +26,7 @@ These are set to best work for my personal workflow. Adjust as needed in to best
 The default script save location is based on my workflow and will attempt to write JPEG file to `path_of_active_document => Presentations => jpegs`. To change this behavior, uncomment the line `destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );` which will prompt for a save location.
 
 
-### Script Explanation
+### Script Breakdown
 
 ##### Unicode Strings & Hex Strings
 Illustrator actions convert most unicode strings to hex strings. You can use [onlinehextools.com/convert-hex-to-string](https://onlinehextools.com/convert-hex-to-string) (or something similar) to convert from `string <=> hex`.
