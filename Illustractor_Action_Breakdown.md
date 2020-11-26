@@ -6,15 +6,15 @@ These are set to best work for my personal workflow. Adjust as needed in to best
 
 | Setting Name | Script Variable | Script Value | Options |
 | --- | --- | --- | --- |
-| Image Quality		| `imagQual` | `06000000` | `01000000` = Low<br>`03000000` = Medium<br>`06000000` = High<br>`08000000` = Maximum
+| Quality		| `imagQual` | `06000000` | `01000000` = Low<br>`03000000` = Medium<br>`06000000` = High<br>`08000000` = Maximum
 | Compression Method	| `compMeth` | `01000000` | `01000000` = Baseline (Standard)<br> `02000000` = Baseline Optimzied<br>`03000000` = Progressive
-| Number of Scans 	| `numScans` | `03000000` | `03000000` = 3 Scans<br>`04000000` = 4 Scans<br>`05000000` = 5 Scans<br>*Only used when Progressive compression is enabled*
+| Scans 		| `numScans` | `03000000` | `03000000` = 3 Scans<br>`04000000` = 4 Scans<br>`05000000` = 5 Scans<br>*Only used when Progressive compression is enabled*
 | Anti-aliasing		| `aliasing` | `02000000` | `01000000` = None<br>`02000000` = Art Optimzied  (Supersampling)<br>`03000000` = Type Optimzied (Hinted)
-| Image Resolution	| `imageRes` | `00002c01` | `00004800` = Screen (72 dpi)<br>`00009600` = Medium (150 dpi)<br>`00002c01` = High (300 dpi)<br>`00005802` = Max (600 dpi)
+| Resolution		| `imageRes` | `00002c01` | `00004800` = Screen (72 dpi)<br>`00009600` = Medium (150 dpi)<br>`00002c01` = High (300 dpi)<br>`00005802` = Max (600 dpi)
 | Color Model		| `colorMdl` | `02000000` | `01000000` = RGB<br>`02000000` = CMYK<br>`03000000` = Grayscale
-| Image Map		| `imageMap` | `02000000` | `02000000` = Disabled<br>`03000000` = Enabled
-| Image Map Style	| `mapStyle` | `02000000` | `01000000` = Client (.html)<br>`02000000` = Server (.map)
-| ICC Profile		| `iccProfl` | `00000100` | `00000000` = Do not embed ICC Profile<br>`00000100` = Embed ICC Profile
+| Imagemap		| `imageMap` | `02000000` | `02000000` = Disabled<br>`03000000` = Enabled
+| Imagemap Style	| `mapStyle` | `02000000` | `01000000` = Client (.html)<br>`02000000` = Server (.map)
+| Embed ICC Profile	| `iccProfl` | `00000100` | `00000000` = Do not embed ICC Profile<br>`00000100` = Embed ICC Profile
 
 
 ### Default Export Location
