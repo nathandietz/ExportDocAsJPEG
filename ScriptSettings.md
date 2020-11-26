@@ -3,7 +3,7 @@
 
 ## Table of Contents  
 [JPEG Options](#jpeg-options)  
-A breakdown for the settings in the **[Illustrator JPEG Options window](/screenshots/window_JPEG_Options.png)**
+A breakdown for the settings in the [Illustrator JPEG Options window](/screenshots/window_JPEG_Options.png)
 
 [Export Location](#default-export-location)  
 Description  
