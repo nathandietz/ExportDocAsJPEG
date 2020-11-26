@@ -106,8 +106,8 @@ function main() {
         var destFolder = null;
         
         
-        destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' ); // Dialog popup for Export location 
-        //destFolder = getJPEGFolder();    // Export location based on saved file location
+        //destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' ); // Dialog popup for Export location h
+        destFolder = getJPEGFolder();    // Export location based on saved file location
        
         // Generates full path name
         targetFile = destFolder.fsName + "/" + baseName(app.activeDocument.name) + ".jpg";
@@ -227,14 +227,25 @@ function locateFolder(folderName, folderPath, folderLevel) {
 
 
 
-/** Generates the Illustrator action
-    @param  xxxxxxxxxx    xxxxxxx
+/** Generates the Illustrator action 
+    For more details on the script and export settings, reference ScriptSettings.md 
+
+    @param  imagQual  Image Quality
+    @param  compMeth  Compression Method
+    @param  numScans  Number of scans (when using progressive compression)
+    @param  aliasing  Anti-aliasing
+    @param  imageRes  Image Resolution
+    @param  colorMdl  Color Model
+    @param  imageMap  Imagemap
+    @param  mapStyle  Imagemap style
+    @param  iccProfl  Embed ICC Profile
+    @param  savePath  File path to save the JPEG
  */
 
-function generateIllustratorAction(imagQual, compMeth, numScans, aliasing, imageRes, colorMdl, mapStyle, mapStyle, iccProfl, destFolder){
+function generateIllustratorAction(imagQual, compMeth, numScans, aliasing, imageRes, colorMdl, imageMap, mapStyle, iccProfl, savePath){
   
   var str = "";
-  for (var i=0;i<destFolder.length;i++) str += u16to8(destFolder.charCodeAt(i));
+  for (var i=0;i<savePath.length;i++) str += u16to8(savePath.charCodeAt(i));
   
   var illustratorAction = ''  +
   '/version 3'                +
