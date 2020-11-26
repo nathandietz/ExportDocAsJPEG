@@ -11,6 +11,7 @@ Description
 [Script Breakdown](#script-breakdown)  
 Description  
 
+-------------
 
 ### JPEG Options
 
