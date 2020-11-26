@@ -20,12 +20,8 @@ These are set to best work for my personal workflow. Adjust as needed in to best
 ### Default Export Location
 The default script save location is based on my workflow and will attempt to write JPEG file to `path_of_active_document => Presentations => jpegs`. To change this behavior, uncomment the line `destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );` which will prompt for a save location.
 
-### Script Explination
 
-##### Warning: The code below will not run because of the comments
-Illustrator actions are very unforgiving and will throw an error unless the formating is perfect. For a working version, reference the .jsx script.
-
--------------
+### Script Explanation
 
 ##### Unicode Strings & Hex Strings
 Illustrator actions convert most unicode strings to hex strings. You can use [onlinehextools.com/convert-hex-to-string](https://onlinehextools.com/convert-hex-to-string) (or something similar) to convert from `string <=> hex`.
