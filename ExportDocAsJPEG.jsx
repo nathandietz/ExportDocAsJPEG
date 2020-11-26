@@ -31,35 +31,30 @@ Main Code [Execution of script begins here]
 // Suppress Illustrator warning dialogs (aka automaticlly overwrite files)
 //app.userInteractionLevel = UserInteractionLevel.DONTDISPLAYALERTS;
 
-main();
+try {
+  
+  // Illustrator has a document open
+  if (app.documents.length > 0) {
+      
+      // Get folder to save the files into
+      var destFolder = null;
+      
+      
+      //destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' ); // Dialog popup for Export location h
+      destFolder = getJPEGFolder();    // Export location based on saved file location
+     
+      // Generates full path name
+      targetFile = destFolder.fsName + "/" + baseName(app.activeDocument.name) + ".jpg";
+      
+      // Writes jpeg file to disk
+      exportJPEG(targetFile);
+      
+  } else {
+      throw new Error("Error: There is no Document open.\nOpen a file and then re-run this script.");
+  }
 
-
-function main() {
-  try {
-    
-    // Illustrator has a document open
-    if (app.documents.length > 0) {
-        
-        // Get folder to save the files into
-        var destFolder = null;
-        
-        
-        //destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' ); // Dialog popup for Export location h
-        destFolder = getJPEGFolder();    // Export location based on saved file location
-       
-        // Generates full path name
-        targetFile = destFolder.fsName + "/" + baseName(app.activeDocument.name) + ".jpg";
-        
-        // Writes jpeg file to disk
-        exportJPEG(targetFile);
-        
-    } else {
-        throw new Error("Error: There is no Document open.\nOpen a file and then re-run this script.");
-    }
-
-  } catch (e) {
-    alert(e.message, "Script Alert", true);
-  } 
+} catch (e) {
+  alert(e.message, "Script Alert", true);
 }
 
 
