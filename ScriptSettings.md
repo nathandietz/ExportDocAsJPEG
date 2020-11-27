@@ -1,19 +1,23 @@
 # Script Settings
-*The current values are set to best work for my personal workflow. Adjust as needed.*
+The current values are set to best work for my personal workflow. Please adjust as needed. 
 
-## Table of Contents  
-[JPEG Options](#export-settings)  
-A breakdown for all the settings in the Illustrator **JPEG Options** window
+## Table of Contents
 
-[Export Location](#default-export-location)  
-Description  
-
-[Script Breakdown](#script-breakdown)  
-Description  
+- [JPEG Options](#jpeg-options) 
+	- A breakdown for the settings in the [Illustrator JPEG Options window](/screenshots/window_JPEG_Options.png)
+- [Export Location](#export-location)
+	- An explanation of the default export location and how to change the export location.
+- [Illustrator Action Breakdown](#illustrator-action-breakdown)
+	- A commented, *but not runnable*, version of the Illustrator Action.
 
 -------------
 
 ### JPEG Options
+
+<details>
+  	<summary>Click to see a screenshot of the Illustrator JPEG Options</a></summary>
+	<img src="/screenshots/window_JPEG_Options.png" width="600">
+</details>
 
 | Setting Name | Script Variable | Script Value | Options |
 | --- | --- | --- | --- |
@@ -27,14 +31,26 @@ Description
 | Imagemap Style	| `mapStyle` | `02000000` | `01000000` = Client (.html)<br>`02000000` = Server (.map)
 | Embed ICC Profile	| `iccProfl` | `00000100` | `00000000` = Do not embed ICC Profile<br>`00000100` = Embed ICC Profile
 
+-------------
 
-### Default Export Location
-The default script save location is based on my workflow and will attempt to write JPEG file to `path_of_active_document => Presentations => jpegs`. To change this behavior, uncomment the line `destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );` which will prompt for a save location.
+### Export Location
+The script export location is relative the saved location of the active document in Illustrator.  
+*e.g.* `path_of_active_document` => `Presentations` => `jpegs` => `exported.jpeg`
 
+You can change this behavior and always be prompted for a save location by modifying the script as shown below.
+```javascript
+/* Uncomment the following line */
+destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );	// Always prompt for a save locatioon
 
-### Script Breakdown
+/* Comment the following line */
+// destFolder = getJPEGFolder(); // Export location based on saved file location
+```
 
-##### Unicode Strings & Hex Strings
+-------------
+
+### Illustrator Action Breakdown
+
+**Unicode Strings & Hex Strings**  
 Illustrator actions convert most unicode strings to hex strings. You can use [onlinehextools.com/convert-hex-to-string](https://onlinehextools.com/convert-hex-to-string) (or something similar) to convert from `string <=> hex`.
 
 ```
