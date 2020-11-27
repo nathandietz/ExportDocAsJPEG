@@ -6,11 +6,13 @@ The current values are set to best work for my personal workflow. Please adjust 
 The script export location is relative the saved location of the active document in Illustrator.  
 *e.g.* `path_of_active_document` => `Presentations` => `jpegs` => `exported.jpeg`
 
-To change this behavior and always be prompted for a save location, uncomment the following line.
+You can change this behavior and always be prompted for a save location by modifying the script
+
+Uncomment the following line:
 ```javascript
 destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );	// Always prompt for a save locatioon
 ``` 
-and comment this line
+Comment this line:
 ```javascript
 // destFolder = getJPEGFolder(); // Export location based on saved file location
 ```
