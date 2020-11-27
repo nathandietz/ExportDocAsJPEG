@@ -1,14 +1,12 @@
-# Table of Contents  
-#### 1. [Disclaimer](#disclaimer)  
+# Table of Contents
 
-#### 2. [JPEG Options](#jpeg-options)  
-A breakdown for the settings in the [Illustrator JPEG Options window](/screenshots/window_JPEG_Options.png)
-
-#### 3. [Export Location](#export-location)  
-An explanation of the default export location and how to change the export location.
-
-#### 4. [Illustrator Action Breakdown](#illustrator-action-breakdown)  
-A commented, *but not runnable*, version of the Illustrator Action.
+- [Disclaimer](#disclaimer) 
+- [JPEG Options](#jpeg-options) 
+	- A breakdown for the settings in the [Illustrator JPEG Options window](/screenshots/window_JPEG_Options.png)
+- [Export Location](#export-location)
+	- An explanation of the default export location and how to change the export location.
+- [Illustrator Action Breakdown](#illustrator-action-breakdown)
+	- A commented, *but not runnable*, version of the Illustrator Action.
 
 -------------
 
