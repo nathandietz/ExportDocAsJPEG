@@ -1,4 +1,6 @@
-# Table of Contents
+# Script Settings
+
+## Table of Contents
 
 - [Disclaimer](#disclaimer) 
 - [JPEG Options](#jpeg-options) 
@@ -10,12 +12,12 @@
 
 -------------
 
-## Disclaimer
+### Disclaimer
 The current values are set to best work for my personal workflow. Please adjust as needed. 
 
 -------------
 
-## JPEG Options
+### JPEG Options
 
 <details>
   	<summary>Click to see a screenshot of the Illustrator JPEG Options</a></summary>
