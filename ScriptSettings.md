@@ -2,22 +2,23 @@
 *The current values are set to best work for my personal workflow. Adjust as needed.*
 
 ## Table of Contents  
-[JPEG Options](#jpeg-options)  
+#### [JPEG Options](#jpeg-options)  
+A breakdown for the settings in the [Illustrator JPEG Options window](/screenshots/window_JPEG_Options.png)
 
-<details>
-  	<summary>A breakdown for the settings in the <a href="/screenshots/window_JPEG_Options.png">Illustrator JPEG Options window</a></summary>
-	<img src="/screenshots/window_JPEG_Options.png" width="600">
-</details>
-
-[Export Location](#export-location)  
+#### [Export Location](#export-location)  
 An explanation of the default export location and how to change the export location.
 
-[Illustrator Action](#illustrator-action)  
+#### [Illustrator Action](#illustrator-action)  
 A commented, *and not runnable*, version of the Illustrator Action.
 
 -------------
 
 ### JPEG Options
+
+<details>
+  	<summary>Click to see a screenshot of the Illustrator JPEG Options</a></summary>
+	<img src="/screenshots/window_JPEG_Options.png" width="600">
+</details>
 
 | Setting Name | Script Variable | Script Value | Options |
 | --- | --- | --- | --- |
