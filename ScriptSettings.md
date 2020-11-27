@@ -36,7 +36,7 @@ The default script save location is based on my workflow and will attempt to wri
 
 ### Illustrator Action
 
-**Unicode Strings & Hex Strings**
+**Unicode Strings & Hex Strings**  
 Illustrator actions convert most unicode strings to hex strings. You can use [onlinehextools.com/convert-hex-to-string](https://onlinehextools.com/convert-hex-to-string) (or something similar) to convert from `string <=> hex`.
 
 ```
