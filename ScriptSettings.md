@@ -5,11 +5,11 @@
 [JPEG Options](#jpeg-options)  
 A breakdown for the settings in the [Illustrator JPEG Options window](/screenshots/window_JPEG_Options.png)
 
-[Export Location](#default-export-location)  
-Description  
+[Export Location](#export-location)  
+An explanation of the default export location and how to change the export location.
 
-[Script Breakdown](#script-breakdown)  
-Description  
+[Illustrator Action](#illustrator-action)  
+A commented, *and not runnable*, version of the Illustrator Action.
 
 -------------
 
@@ -29,14 +29,14 @@ Description
 
 -------------
 
-### Default Export Location
+### Export Location
 The default script save location is based on my workflow and will attempt to write JPEG file to `path_of_active_document => Presentations => jpegs`. To change this behavior, uncomment the line `destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );` which will prompt for a save location.
 
 -------------
 
-### Script Breakdown
+### Illustrator Action
 
-##### Unicode Strings & Hex Strings
+**Unicode Strings & Hex Strings**
 Illustrator actions convert most unicode strings to hex strings. You can use [onlinehextools.com/convert-hex-to-string](https://onlinehextools.com/convert-hex-to-string) (or something similar) to convert from `string <=> hex`.
 
 ```
