@@ -3,10 +3,18 @@ The current values are set to best work for my personal workflow. Please adjust 
 
 
 ### Export Location
-The default script save location is based on my workflow and will attempt to write JPEG file to   
-`path_of_active_document => Presentations => jpegs`. 
+By default, the script export location is based to the save location of the active document. It will attempt to write JPEG file to
+`path_of_active_document` => `Presentations` => `jpegs`. 
 
-To change this behavior, uncomment the line `destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );` which will prompt for a save location.
+
+Uncommenting the following line will enable prompt for a save location.
+```javascript
+destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );	// Always prompt for a save locatioon
+``` 
+and disable this line by commenting it out
+```javascript
+// destFolder = getJPEGFolder(); // Export location based on saved file location
+```
 
 
 
