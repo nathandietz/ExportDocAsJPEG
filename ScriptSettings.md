@@ -1,19 +1,23 @@
-# Script Settings
-*The current values are set to best work for my personal workflow. Please adjust as needed.*
+# Table of Contents  
+#### 1. [Disclaimer](#disclaimer)  
 
-## Table of Contents  
-#### 1. [JPEG Options](#jpeg-options)  
+#### 2. [JPEG Options](#jpeg-options)  
 A breakdown for the settings in the [Illustrator JPEG Options window](/screenshots/window_JPEG_Options.png)
 
-#### 2. [Export Location](#export-location)  
+#### 3. [Export Location](#export-location)  
 An explanation of the default export location and how to change the export location.
 
-#### 3. [Illustrator Action](#illustrator-action)  
-A commented, *and not runnable*, version of the Illustrator Action.
+#### 4. [Illustrator Action Breakdown](#illustrator-action-breakdown)  
+A commented, *but not runnable*, version of the Illustrator Action.
 
 -------------
 
-### JPEG Options
+## Disclaimer
+The current values are set to best work for my personal workflow. Please adjust as needed. 
+
+-------------
+
+## JPEG Options
 
 <details>
   	<summary>Click to see a screenshot of the Illustrator JPEG Options</a></summary>
@@ -39,7 +43,7 @@ The default script save location is based on my workflow and will attempt to wri
 
 -------------
 
-### Illustrator Action
+### Illustrator Action Breakdown
 
 **Unicode Strings & Hex Strings**  
 Illustrator actions convert most unicode strings to hex strings. You can use [onlinehextools.com/convert-hex-to-string](https://onlinehextools.com/convert-hex-to-string) (or something similar) to convert from `string <=> hex`.
