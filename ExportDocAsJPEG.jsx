@@ -40,8 +40,8 @@ try {
       var destFolder = null;
       
       
-      //destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' ); // Dialog popup for Export location h
-      destFolder = getJPEGFolder();    // Export location based on saved file location
+      //destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' ); // Always prompt for a save locatioon
+      destFolder = getJPEGFolder(); // Export location based on saved file location
      
       // Generates full path name
       targetFile = destFolder.fsName + "/" + baseName(app.activeDocument.name) + ".jpg";
