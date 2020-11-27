@@ -39,6 +39,10 @@ Illustrator currently doesn't allow you to assign a keyboard shortcut to any scr
     - 3b. Navigate to `Applications => Adobe Illustrator 2020 => Adobe Illustrator.app`
 4. Save 
 4. Assign a keyboard shortcut `System Peferences => Keyboard => Shortcuts => Services`   
- 
-![Automator Build Settings](/ExportDocAsJPEG.workflow/Contents/QuickLook/Preview.png)
+
+<details>
+  	<summary>Click to see a screenshot of the Automator Build Settings</a></summary>
+	<img src="/ExportDocAsJPEG.workflow/Contents/QuickLook/Preview.png">
+</details>
+
 
