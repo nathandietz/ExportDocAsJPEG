@@ -1,19 +1,6 @@
 # Script Settings
 The current values are set to best work for my personal workflow. Please adjust as needed. 
 
-
-### Export Location
-The script export location is relative the saved location of the active document in Illustrator.  
-*e.g.* `path_of_active_document` => `Presentations` => `jpegs` => `exported.jpeg`
-
-You can change this behavior and always be prompted for a save location by modifying the script as shown below.
-```javascript
-/* Uncomment the following line */
-destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );	// Always prompt for a save locatioon
-/* Comment the following line */
-// destFolder = getJPEGFolder(); // Export location based on saved file location
-```
-
 ## Table of Contents
 
 - [JPEG Options](#jpeg-options) 
@@ -47,10 +34,17 @@ destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );	// Alw
 -------------
 
 ### Export Location
-The default script save location is based on my workflow and will attempt to write JPEG file to   
-`path_of_active_document => Presentations => jpegs`. 
+The script export location is relative the saved location of the active document in Illustrator.  
+*e.g.* `path_of_active_document` => `Presentations` => `jpegs` => `exported.jpeg`
 
-To change this behavior, uncomment the line `destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );` which will prompt for a save location.
+You can change this behavior and always be prompted for a save location by modifying the script as shown below.
+```javascript
+/* Uncomment the following line */
+destFolder = Folder.selectDialog( 'Select folder for JPEG files.', '~' );	// Always prompt for a save locatioon
+
+/* Comment the following line */
+// destFolder = getJPEGFolder(); // Export location based on saved file location
+```
 
 -------------
 
