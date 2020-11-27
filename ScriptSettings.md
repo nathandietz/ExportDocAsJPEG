@@ -3,9 +3,8 @@ The current values are set to best work for my personal workflow. Please adjust 
 
 
 ### Export Location
-By default, the script export location is based to the save location of the active document. It will attempt to write JPEG file to
-`path_of_active_document` => `Presentations` => `jpegs`. 
-
+By default, the script export location is relative the saved location of the active document in Illustrator.  
+`path_of_active_document` => `Presentations` => `jpegs` => `exported.jpeg`
 
 Uncommenting the following line will enable prompt for a save location.
 ```javascript
@@ -15,8 +14,6 @@ and disable this line by commenting it out
 ```javascript
 // destFolder = getJPEGFolder(); // Export location based on saved file location
 ```
-
-
 
 ## Table of Contents
 
