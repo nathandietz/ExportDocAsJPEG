@@ -1,14 +1,14 @@
 # Script Settings
-*The current values are set to best work for my personal workflow. Adjust as needed.*
+*The current values are set to best work for my personal workflow. Please adjust as needed.*
 
 ## Table of Contents  
-#### [JPEG Options](#jpeg-options)  
+#### 1. [JPEG Options](#jpeg-options)  
 A breakdown for the settings in the [Illustrator JPEG Options window](/screenshots/window_JPEG_Options.png)
 
-#### [Export Location](#export-location)  
+#### 2. [Export Location](#export-location)  
 An explanation of the default export location and how to change the export location.
 
-#### [Illustrator Action](#illustrator-action)  
+#### 3. [Illustrator Action](#illustrator-action)  
 A commented, *and not runnable*, version of the Illustrator Action.
 
 -------------
