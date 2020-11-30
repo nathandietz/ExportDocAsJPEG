@@ -6,7 +6,8 @@ Version: 0.7
 This script saves each artboard in the active Illustrator document
 as a 300dpi CMYK JPEG in the ' Presentations/ jpegs' folder
 
-This script was (modified from pieces I found on the adobe forums).
+It was originally found on the adobe forums. Thanks to Silly-V and all the others on the forums.
+https://community.adobe.com/t5/illustrator/creating-a-dynamic-action-to-use-with-app-doscript-method/td-p/8918373
 
 *********************************************************/
 
@@ -28,8 +29,8 @@ Main Code [Execution of script begins here]
 
 #target illustrator
 
-// Suppress Illustrator warning dialogs (aka automaticlly overwrite files)
-//app.userInteractionLevel = UserInteractionLevel.DONTDISPLAYALERTS;
+// Suppress Illustrator warning dialogs (aka Dont prompt for file overwrite. Just do it automatically)
+app.userInteractionLevel = UserInteractionLevel.DONTDISPLAYALERTS;
 
 try {
   
