@@ -29,8 +29,8 @@ Main Code [Execution of script begins here]
 
 #target illustrator
 
-// Suppress Illustrator warning dialogs (aka automaticlly overwrite files)
-//app.userInteractionLevel = UserInteractionLevel.DONTDISPLAYALERTS;
+// Suppress Illustrator warning dialogs (aka Dont prompt for file overwrite. Just do it automatically)
+app.userInteractionLevel = UserInteractionLevel.DONTDISPLAYALERTS;
 
 try {
   
