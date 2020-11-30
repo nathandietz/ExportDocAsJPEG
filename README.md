@@ -29,12 +29,13 @@ For more information on scripting illustrator look at the adobe forums:
 ## 3. Assigning a Keyboard Shortcut (**macOS ONLY**)
 Illustrator currently doesn't allow you to assign a keyboard shortcut to any script in the `File => Scripts` submenu. However, you can get around this limitation by creating an Automator service for Illustrator that runs `ExportDocAsJPEG.jsx` and assign that service a keyboard shortcut through `System Peferences => Keyboard => Shortcuts => Services`
 
-#### Easy Way
-1. Download the [ExportDocAsJPEG.workflow](ExportDocAsJPEG.workflow) Automator services.
-2. Double click on the file and the Automator `Service Installer` will prompt you to install the shortcut
-3. Assign a keyboard shortcut `System Peferences => Keyboard => Shortcuts => Services` 
+#### 1. Install Automator Service 
 
-#### Manual Way
+**Option A: Automatic**
+1. Download the [ExportDocAsJPEG.workflow](ExportDocAsJPEG.workflow) Automator service.
+2. Double click on the file and the Automator `Service Installer` will prompt you to install the shortcut
+
+**Option B: Manual**
 1. Create an new Automator Service.
 2. In Automator, add a `Get Specified Finder Items`
     - 2a. Click the `Add` button and navigate to the script location and click `Add`
@@ -42,11 +43,15 @@ Illustrator currently doesn't allow you to assign a keyboard shortcut to any scr
     - 3a. Click the `Open With` dropdown menu, scroll down, and select `Other...`
     - 3b. Navigate to `Applications => Adobe Illustrator 2020 => Adobe Illustrator.app`
 4. Save 
-4. Assign a keyboard shortcut `System Peferences => Keyboard => Shortcuts => Services`   
 
 <details>
   	<summary>Click to see a screenshot of the final Automator Build Settings</a></summary>
 	<img src="/ExportDocAsJPEG.workflow/Contents/QuickLook/Preview.png">
 </details>
 
-
+#### 2. Assign Keyboard Shortcut
+Launch `System Prefernces` and assign a keyboard shortcut by navigating to `System Peferences => Keyboard => Shortcuts => Services`
+<details>
+  	<summary>Click to see a screenshot of the final Automator Build Settings</a></summary>
+	<img src="/screenshots/window_Services_Shortcut.png">
+</details>
