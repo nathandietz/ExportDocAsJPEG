@@ -45,13 +45,13 @@ Illustrator currently doesn't allow you to assign a keyboard shortcut to any scr
 4. Save 
 
 <details>
-  	<summary>Click to see a screenshot of the final Automator Build Settings</a></summary>
+  	<summary>Click to see a screenshot of the Automator Build Settings</a></summary>
 	<img src="/ExportDocAsJPEG.workflow/Contents/QuickLook/Preview.png">
 </details>
 
 #### 2. Assign Keyboard Shortcut
-Launch `System Prefernces` and assign a keyboard shortcut by navigating to `System Peferences => Keyboard => Shortcuts => Services`
+Launch `System Prefernces` and assign a keyboard shortcut by navigating to `Keyboard => Shortcuts => Services`. For help visit [Create keyboard shortcuts for apps on Mac](https://support.apple.com/guide/mac-help/create-keyboard-shortcuts-for-apps-mchlp2271/).
 <details>
-  	<summary>Click to see a screenshot of the final Automator Build Settings</a></summary>
+  	<summary>Click to see a screenshot of the Keyboard Shortcuts</a></summary>
 	<img src="/screenshots/window_Services_Shortcut.png">
 </details>
