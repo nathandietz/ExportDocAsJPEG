@@ -1,5 +1,5 @@
 # ExportDocAsJPEG
-My design workflow for Illustrator frequently requires me to export 300dpi CMYK JPEG images. The `ExportDocAsJPEG.jsx` reduces this laborious multi-step (7+ clicks) process down to two clicks or a single keyboard shortcut (macOS only).
+My design workflow for Illustrator frequently requires me to export 300dpi CMYK JPEG images. The `ExportDocAsJPEG.jsx` reduces this laborious multi-step process (7+ clicks) down to two clicks or a single keyboard shortcut (macOS only).
 
 #### Disclaimer
 The `ExportDocAsJPEG.jsx` script has only been tested on **macOS High Sierra (10.13.6)** and **Adobe Illustrator CC 2020 (24.3)**. While it should work on other versions of macOS and Adobe Illustrator, I cannot make any guarantees. You may need to adjust to fit your setup. 
