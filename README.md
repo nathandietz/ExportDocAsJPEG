@@ -21,9 +21,13 @@ It theoretically should also work on Windows, as I don't believe there is any OS
 ## 2. Customizing
 If you want customize the script and better understand how the Illustrator action is built, you can reference [ScriptSettings.md](ScriptSettings.md). It breaks down the different sections of the action and how to modify them.
 
+For more information on scripting illustrator look at the adobe forums:
+- [Creating a dynamic action to use with app.doScript() method.](https://community.adobe.com/t5/illustrator/creating-a-dynamic-action-to-use-with-app-doscript-method/td-p/8918373)
+- [Dynamic actions with app.doScript() method](https://community.adobe.com/t5/illustrator/dynamic-actions-with-app-doscript-method/td-p/10569163)
+
 
 ## 3. Assigning a Keyboard Shortcut (**macOS ONLY**)
-Illustrator currently doesn't allow you to assign a keyboard shortcut to any script in the `File => Scripts` submenu. However, you can get around this limitation by creating an Automator service for Illustrator that runs `ExportDocAsJPEG.jsx` and assign that a keyboard shortcut through `System Peferences => Keyboard => Shortcuts => Services`
+Illustrator currently doesn't allow you to assign a keyboard shortcut to any script in the `File => Scripts` submenu. However, you can get around this limitation by creating an Automator service for Illustrator that runs `ExportDocAsJPEG.jsx` and assign that service a keyboard shortcut through `System Peferences => Keyboard => Shortcuts => Services`
 
 #### Easy Way
 1. Download the [ExportDocAsJPEG.workflow](ExportDocAsJPEG.workflow) Automator services.
