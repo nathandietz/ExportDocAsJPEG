@@ -29,8 +29,11 @@ Main Code [Execution of script begins here]
 
 #target illustrator
 
-// Suppress Illustrator warning dialogs (aka Dont prompt for file overwrite. Just do it automatically)
-app.userInteractionLevel = UserInteractionLevel.DONTDISPLAYALERTS;
+// This will suppress the warning dialog and run the script 
+app.preferences.setBooleanPreference("ShowExternalJSXWarning", false);
+
+// Uncomment line below to suppress Illustrator warning dialogs (aka Dont prompt for file overwrite. Just do it automatically)
+//app.userInteractionLevel = UserInteractionLevel.DONTDISPLAYALERTS;
 
 try {
   
